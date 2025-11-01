@@ -1,0 +1,198 @@
+.product-card {
+  text-align: center;
+  border: none;
+  margin-bottom: 1rem;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.product-card .product-brand {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+}
+.product-card .product-name {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+.btn-comprar {
+  background-color: transparent;
+  border: 1px solid #e4007c;
+  color: #e4007c;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-comprar:hover {
+  background-color: #e4007c;
+  color: white;
+}
+.section-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* ================================================= */
+/* ====== ESTILOS PERSONALIZADOS PARA EL MODAL ===== */
+/* ================================================= */
+
+/* ---- Estilo general del diálogo del modal ---- */
+#modalUbicacion .modal-dialog {
+  max-width: 650px; /* Hacemos el modal un poco más ancho */
+}
+
+/* ---- Estilo del contenedor principal del modal ---- */
+#modalUbicacion .modal-content {
+  border-radius: 8px; /* Bordes ligeramente redondeados */
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ---- Cabecera personalizada ---- */
+#modalUbicacion .modal-header {
+  border-bottom: none; /* Eliminamos la línea divisoria inferior */
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+#modalUbicacion .modal-header .modal-title {
+  font-size: 1.5rem; /* Título más grande */
+  font-weight: 400; /* Letra más fina que el bold por defecto */
+  color: #333;
+}
+
+/* Botón de cierre (la 'X') */
+#modalUbicacion .modal-header .btn-close {
+  position: absolute; /* Lo sacamos del flujo para posicionarlo */
+  top: 15px;
+  right: 15px;
+  font-size: 1rem; /* Hacemos el ícono 'X' más grande */
+}
+
+/* ---- Cuerpo personalizado ---- */
+#modalUbicacion .modal-body {
+  text-align: center; /* Centramos el texto del párrafo */
+  padding: 1.5rem 3rem; /* Más espacio interior */
+  color: #555;
+}
+
+/* ---- Estilo del formulario (la parte más compleja) ---- */
+.form-group-custom {
+  position: relative; /* Clave para posicionar la etiqueta */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-label-custom {
+  position: absolute; /* Posicionamos la etiqueta sobre el borde */
+  top: 0;
+  left: 20px;
+  transform: translateY(-50%); /* La centramos verticalmente en el borde */
+  background-color: white; /* Le damos un fondo para que "corte" la línea del borde */
+  padding: 0 5px;
+  color: #6c5ce7; /* Color morado para el texto de la etiqueta */
+  font-size: 0.8rem;
+}
+
+#modalUbicacion .form-select {
+  border-color: #ddd; /* Un borde gris claro */
+  padding: 1rem; /* Más altura interna */
+  border-radius: 8px;
+}
+#modalUbicacion .form-select:focus {
+  border-color: #6c5ce7; /* Borde morado al hacer clic */
+  box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.25); /* Sombra exterior morada */
+}
+
+/* ---- Pie de página personalizado ---- */
+#modalUbicacion .modal-footer {
+  border-top: none; /* Eliminamos la línea divisoria superior */
+  justify-content: center; /* Centramos el botón */
+  padding-bottom: 2rem;
+}
+
+.btn-aceptar {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #555;
+  padding: 0.75rem 3rem; /* Botón más grande y ancho */
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.2s ease; /* Transición suave para el hover */
+}
+
+.btn-aceptar:hover {
+  background-color: #f8f9fa; /* Un fondo gris muy claro al pasar el mouse */
+  border-color: #aaa;
+  color: #333;
+}
+
+/*==================================================*/
+/* ================================================================ */
+/* ================== ESTILOS PARA EL PIE DE PÁGINA ================= */
+/* ================================================================ */
+
+.footer-custom {
+  background-color: #2b2b2b; /* Color de fondo gris oscuro */
+  color: #f8f9fa; /* Color de texto principal claro */
+}
+
+.footer-custom h3 {
+  font-size: 1rem; /* Tamaño del título de cada columna */
+  font-weight: 600; /* Hacemos el título semibold */
+  color: #ffffff; /* Color blanco para los títulos */
+  margin-bottom: 1.5rem;
+}
+
+.footer-custom .footer-link {
+  color: #adb5bd; /* Color gris claro para los enlaces */
+  text-decoration: none;
+  font-size: 0.875rem; /* Tamaño de fuente para los enlaces */
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-custom .footer-link:hover {
+  color: #ffffff; /* El enlace se vuelve blanco al pasar el mouse */
+}
+
+.payment-icons img {
+  max-height: 25px; /* Altura máxima para los íconos de pago */
+  margin-right: 10px; /* Espacio entre los íconos */
+  opacity: 0.8;
+}
+
+.social-icons .social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #495057; /* Fondo de los círculos de redes sociales */
+  color: #ffffff;
+  border-radius: 50%; /* Para que sean circulares */
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.social-icons .social-link:hover {
+  background-color: #6c757d; /* Cambio de color al pasar el mouse */
+}
+
+.fine-print {
+  font-size: 0.75rem; /* Tamaño de la letra pequeña del final */
+  color: #6c757d; /* Color gris para la letra pequeña */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}

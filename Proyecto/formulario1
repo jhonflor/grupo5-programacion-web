@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="csss/logion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Iniciar sesión</h1>
+
+        <div class="logo">
+            <span class="r-logo">R</span>
+            <span class="com-logo">.COM</span>
+        </div>
+
+        <h2 class="welcome-message">¡Bienvenido a Ripley.com!</h2>
+        <p class="instructions">Ingresa tu usuario y contraseña para iniciar sesión</p>
+
+        <form>
+            <div class="input-group">
+                <input type="text" id="email" name="email" placeholder="Correo o DNI*" required>
+            </div>
+
+            <div class="input-group password-group">
+                <input type="password" id="password" name="password" placeholder="Contraseña*" required>
+                <i class="fa-solid fa-eye-slash password-icon"></i>
+            </div>
+
+            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            <button type="button" class="btn btn-google"> 
+                <i class="fab fa-google"></i> Iniciar sesión con Google
+                <a href="accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?gsiwebsdk=3&client_id=742496498322-csubr1vuemjidop9ql6c6ldcgfo6hj5k.apps.googleusercontent.com&scope=openid%20profile%20email%20profile%20email&redirect_uri=storagerelay%3A%2F%2Fhttps%2Fauthentication.ripley.com.pe%3Fid%3Dauth410765&prompt=consent&access_type=offline&response_type=code&include_granted_scopes=true&enable_granular_consent=true&service=lso&o2v=2&flowName=GeneralOAuthFlow"></a>
+            </button>
+            <button type="button" class="btn btn-apple">
+                <i class="fab fa-apple"></i> Iniciar sesión con Apple
+                <a href="https://appleid.apple.com/auth/authorize?client_id=ripley-experience-prd-pe&redirect_uri=https%3A%2F%2Fauthentication.ripley.com.pe&response_type=code%20id_token&state=state&scope=email%20name&response_mode=web_message&frame_id=fa8d9de8-a55d-4dce-af98-afd97fb18187&m=11&v=1.5.5"></a>
+            </button>
+        </form>
+
+        <div class="signup-link">
+            <p>¿Eres nuevo en Ripley.com?</p>
+            <a href="#">Crea tu cuenta</a>
+        </div>
+    </div>
+</body>
+</html>

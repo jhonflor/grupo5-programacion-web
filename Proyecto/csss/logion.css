@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+/* Contenedor principal del formulario */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+    border-top: 1px solid #c52d2d;
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+/* Estilos del logo */
+.logo {
+    margin-bottom: 20px;
+}
+.r-logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 36px;
+    border: 2px solid #000;
+    padding: 0 8px;
+}
+.com-logo {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Mensajes de bienvenida e instrucciones */
+.welcome-message {
+    font-size: 18px;
+    color: #8A2BE2; /* Un tono de morado */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Grupo de campos de entrada (input) */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante para que el padding no afecte el ancho */
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #8A2BE2;
+}
+
+/* Icono del ojo en el campo de contraseña */
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Enlace de "Olvidé mi contraseña" */
+.forgot-password {
+    display: block;
+    margin-bottom: 30px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de los botones */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+.btn-google, .btn-apple {
+    background-color: #fff;
+    color: #0a0a0a;
+}
+
+.btn-google:hover, .btn-apple:hover {
+    background-color: #f2f2f2;
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+
+/* Enlace para crear cuenta nueva */
+.signup-link {
+    margin-top: 30px;
+}
+
+.signup-link p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.signup-link a {
+    color: #8A2BE2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
